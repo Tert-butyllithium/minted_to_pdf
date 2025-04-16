@@ -1,0 +1,30 @@
+\documentclass[varwidth]{standalone}
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[tt=false]{libertine}  % Sets Libertinus (or Linux Libertine) for text
+\usepackage[varqu]{zi4}           % Loads Inconsolata as the monospaced font
+\pdfmapfile{+libertine.map}
+\usepackage{adjustbox}
+
+% (Any other packages or color definitions you want...)
+
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{pastelcyan}{rgb}{0.741, 0.867, 0.894}
+\definecolor{skyice}{rgb}{0.62, 0.776, 0.953} 
+\definecolor{warmlinen}{rgb}{0.949, 0.937, 0.906}
+\definecolor{powderblue}{RGB}{152,193,217}
+\definecolor{sageleaf}{RGB}{233, 237, 201}
+\definecolor{blushcloud}{RGB}{241,231,231}
+\definecolor{gainsboro}{RGB}{220,220,220}
+
+
+\begin{document}
+
+
+\begin{minted}{{ minted_block_options }}
+{{ minted_code }}
+\end{minted}
+
+\end{document}
