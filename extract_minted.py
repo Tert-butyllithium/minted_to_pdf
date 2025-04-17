@@ -33,12 +33,13 @@ def main():
 
     # Ensure snippet output directory
     os.makedirs(SNIPPET_DIR, exist_ok=True)
+    snippet_count = 0
 
     for texfile in tex_files:
         print(f"Processing {texfile} ...")
         # Process line by line
         new_lines = []
-        snippet_count = 0
+
         in_minted = False
 
         # We'll store minted options (like [linenos]{python}) in minted_opts
